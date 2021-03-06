@@ -1,0 +1,42 @@
+==>>Create an empty folder and house your environment there...
+pip list
+python --version
+python -m venv proj1_venv
+==>>Check for a new environment to be created containing a python & pip installation
+==>>Activate the environment hence created
+pip list
+python --version
+==>>Install a couple of packages of your desire
+pip install pandas
+pip install numpy
+==>>Run a python import statement to see if the installs are fine
+==>>Create a requirement.txt file
+pip freeze > requirements.txt
+==>>Deactivate the environment
+
+==>>Create a new environment with different packages following the same procedure
+python -m venv proj2_venv
+==>>Activate the second environment created
+pip list
+==>>Run a python import statement to see if the installs of proj1_env are working
+==>>Deactivate the environment
+
+==>>Create a new environment with requirements.txt of proj1 using the below command
+python -m venv proj3_venv
+pip install -r requirements1.txt
+
+==>>Create a new environment with access to system-site-packages using the below command:
+python -m venv proj4_venv --system-site-packages
+
+
+Note:
+Make sure to deactivate environments when you exit your session
+Make sure the env folders are not mixed up with the projet files
+
+Virtual environments can be created with different versions of python, if the other versions of python are available in your system
+(Say your system has 3.8 and you use it by default.
+Also you have 2.7 installed in your system.
+In that case you can create a virtual environment with python 2.7 using the below command)
+python -m venv <env_name> -p <path_to_py_27_file>
+
+

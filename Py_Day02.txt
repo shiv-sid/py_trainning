@@ -1,0 +1,51 @@
+stud_name = "shiva"
+#Students name is an entity that keeps changing, and hence it is referred as a variable
+#"stud_name" is the identifier, the name given to the variable 
+
+print(stud_name)
+
+help('keywords')
+
+print("Simple print")
+print("Simple print")
+
+print(5)
+name = "Suresh"
+print(name)
+print("Hello ",name)
+
+print("Simple's print")
+
+print('simple"s print')
+
+val1=input("Enter a number : ")
+val2=input("Enter a number : ")
+val3=input("Enter a number : ")
+
+print("Type of val1 : ",type(val1))
+print("Type of val2 : ",type(val2))
+print("Type of val3 : ",type(val3))
+
+help(input)
+
+#This is a single-line comment
+print("Single line comment is explained here...!!")
+
+a=10
+b=5
+print(a+b)#This is an inline comment explained
+
+#This is multi-line comment-1
+#This is multi-line comment-2
+#This is multi-line comment-3
+a=100
+b=5
+print(a*b)
+
+
+"""
+This is a method of doc-strings.
+This is read by the interpreter.
+But this part doesnt contribute to the functionality of the code.
+This concept can be revisited later.
+"""

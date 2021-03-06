@@ -1,0 +1,26 @@
+Steps:
+Create a folder
+Create a virtual env within that folder
+Activate the environment
+Install flask package and other pre-requisites
+Create your script file(app.py) and move further
+Try accessing http://127.0.0.1:5000/ or http://localhost:5000
+Create 2 folders static(for static files such as css) & templates(for html files)
+Try rendering the html files in the web-app created(check app2.py file)
+Try out template-referencing(Extend base.html to other html pages)
+Include css styling in static folder and integrate with flask
+
+
+
+Commands:
+cd to the folder newly created:
+cd Py_FlaskDemo
+python -m venv flask_env
+cd to the scripts location:
+cd flask_env/Scripts
+activate
+cd back to the home folder:
+cd ..\..\
+pip list
+pip install flask flask-sqlalchemy
+pip list

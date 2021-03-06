@@ -1,0 +1,90 @@
+"""
+#import <module_name>
+import file1
+file1.fnc1()
+file1.fnc2()
+
+
+
+
+
+#import <module_name> as <module_name_shortcut>
+import file1 as fl1
+fl1.fnc1()
+fl1.fnc2()
+
+
+
+
+#from <module_name> import <func_name>
+
+from file1 import fnc1,temp
+temp="Hello Here"
+fnc1()
+print(temp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#from <module_name> import *
+#not recommended
+from file1 import *
+fnc1()
+add(2,3)
+fnc2()
+
+
+#from <module_name> import <func_name> as <func_name_shortcut> 
+#Type-1
+from file1 import fnc1 as f1
+f1()
+
+
+#from <module_name> import <func_name1> as <func_name1_shortcut>, <func_name2> as <func_name2_shortcut>
+#Type-2
+from file1 import fnc1 as f1, fnc2 as f2 , temp as t1
+temp="Hello Here..!!"
+f1()
+f2()
+print(t1)
+print(temp)
+
+
+
+import sys
+print(sys.path)
+
+sys.path.append("C:\\_SAAM\\Py_Train")
+print(sys.path)
+from adderpy import add
+add(55,4)
+"""
+
+# 1 - Local Folder
+# 2 - Python Path 
+# 3 - Standard Libraries
+# 4 - Site-packages 
+
+
+
+import random
+print(random.choice([1,2,34,5,6,7,7,3]))
+
+"""
+sys.path.append("C:\\_SAAM\\Py_Train")
+print(sys.path)
+from adderpy import add
+add("hello","shiv")
+"""

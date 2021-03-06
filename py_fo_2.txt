@@ -1,0 +1,17 @@
+"""
+
+with open("tf3.txt","a") as f:
+    f.write("Hello this is file-handling py..\n")
+
+#w
+#at first instance w mode creates the file if it  doesnt exist
+#w mode shall overwrite if file is created, hence use a in such cases
+#a
+
+"""
+
+w_li=["this is line-1","this is line-2","this is line-3","this is line-4"]
+with open("tf4.txt","w") as f:
+    f.writelines(w_li)
+
+

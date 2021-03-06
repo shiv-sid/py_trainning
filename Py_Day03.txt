@@ -1,0 +1,335 @@
+# Datatypes
+
+name = "pyTHon"
+Morn_or_Eve = "M"
+tutorial_no = 2
+version = 3.6
+c = 5+4j
+is_Learner = True
+
+print(name,"\t",type(name))
+print(Morn_or_Eve,"\t",type(Morn_or_Eve))
+print(tutorial_no,"\t",type(tutorial_no))
+print(version,"\t",type(version))
+print(c,"\t",type(c))
+print(is_Learner,"\t",type(is_Learner))
+
+# int Data-type
+
+num1=3
+print(type(num1))
+
+### Arithmetic operators
+
+print(3+2)
+print(3-2)
+print(3*2)
+print(3/2)
+print(3//2)
+print(3**2)
+print(3%2)
+
+### Order of Precedence & Associativity
+
+print(3*2+1)
+print(3*(2+1))
+
+print(100/10*10)
+# Here, / & * have same order of precedence, but LTR associativity so O/P is 100
+
+### Comparisons
+
+print(3==2)
+print(3!=2)
+print(3>2)
+print(3<2)
+print(3>=2)
+print(3<=2)
+
+### Other Numeric Data-type related operations/methods
+
+num1 = 1
+num1 = num1+1
+print(num1)
+
+num2 = 1
+num2 += 1
+print(num2)
+
+
+print(abs(-255))
+print(round(196.2568,2))
+
+### int to string type conversion
+
+number = '12546'
+print(type(number))
+
+number = int(number)
+print(type(number))
+
+st_val = "hello"
+st_val = int(st_val)
+print(st_val)
+print(type(st_val))
+
+# string Data-type
+
+print("This is printed-out on the screen...!!")
+
+message = "Hello Team..!!"
+print(message)
+
+###  Text - In single,double,triple quotes
+
+print("This is enclosed in double'quotes...")
+print('This is enclosed in single"quotes...')
+
+print("""This text is enclosed in 
+triple quotes""")
+
+### String - len and index 
+
+disp_message = "Hello world"
+print(len(disp_message))
+
+print(disp_message[0])
+print(disp_message[10])
+print(disp_message[11])
+
+### String Indexing & Slicing
+
+str_value ='ASTRINGG'
+
+#  A  S  T  R  I  N  G  G
+#  0  1  2  3  4  5  6  7
+# -8 -7 -6 -5 -4 -3 -2 -1
+
+print(str_value)
+print(len(str_value))
+
+print(str_value[3:5])
+print(str_value[1:7:2])
+print(str_value[::-1])
+
+  # Using indexing sequence 
+print("\nString Indexing") 
+print(str_value[:3]) 
+
+print(str_value[1::2]) 
+print(str_value[1:5:2])
+print(str_value[-1:-12:-2]) 
+print(str_value[::-3])
+
+  
+# Prints string in reverse  
+print("\nReverse String") 
+print(str_value[::-1]) 
+
+
+### Some String Methods/functions
+
+print(str_value.lower())
+print(str_value.upper())
+
+print(str_value.find('S'))
+print(str_value.find('S',2))
+
+print(str_value.count('G'))
+
+
+### help() & dir()
+
+help(str)
+
+dir(str_value)
+
+# Escape Sequences
+
+print('What\'s up Pal..')
+print("How\"s your health ?")
+print("This\ttab-space")
+print("This is a \nNew-line")
+print('\x40 hello')
+
+# Statement - Endings in python
+
+print("line-1")
+print("line-2")
+
+print("line-1");print("line-2")
+
+# List Data-type
+
+students = ["Raj","DK","Kumar","Suresh","Ramesh","Shiva"]
+
+print(len(students))
+print(students[3])
+print(students[:2])
+print(students[0])
+print(students[-1])
+print(students[::-1])
+
+
+print(students[7])
+
+### Adding to list
+
+
+students.append('Santosh')
+print(students)
+
+students.insert(0,'Avinash')
+print(students)
+
+students_2=["Sita","Geeta"]
+students.insert(2,students_2)
+print(students)
+print(students[2])
+
+students.extend(students_2)
+print(students)
+
+### Removing from list
+
+students.remove("Sita")
+print(students)
+
+students.pop()
+print(students)
+
+### Sorting lists
+
+students = ["Raj","DK","Kumar","Suresh","Ramesh","Shiva"]
+
+students.reverse()
+print(students)
+students.sort()
+print(students)
+
+numero = [1,2,34,5,67,4,66]
+numero.sort(reverse=True)
+print(numero)
+
+numero = [1,2,34,5,67,4,66]
+sort_numero = sorted(numero)
+print(numero)
+print(sort_numero)
+
+### looping in lists
+
+for num in numero:
+    print(num)
+	
+for ind,stud in enumerate(students):
+    print(ind,stud)
+	
+for ind,stud in enumerate(students,start=2):
+    print(ind,stud)
+	
+# Difference between list & tuples
+
+students_1 = ["Raj","DK","Kumar","Suresh","Ramesh","Shiva"]
+students_2 = students_1
+
+print(students_1)
+print(students_2)
+
+students_1[1]="Ram"
+
+print(students_1)
+print(students_2)
+
+students_1 = ("Raj","DK","Kumar","Suresh","Ramesh","Shiva")
+students_2 = students_1
+
+print(students_1)
+print(students_2)
+
+students_1[1]="Ram"
+
+
+# set Data-type
+
+students = {"Raj","DK","Kumar","Suresh","Ramesh","Shiva"}
+print(students)
+
+students = {"Raj","DK","Kumar","Suresh","Ramesh","Shiva","DK"}
+print(students)
+
+print("Rita" in students)
+
+### Important set methods
+
+students = {"Raj","DK","Kumar","Suresh","Ramesh","Shiva"}
+interns = {"Raj","Shiva","Babita","Geeta","Ramesh"}
+print(students.union(interns))
+print(students.intersection(interns))
+print(students.difference(interns))
+
+# dictionary Data-type
+
+Employee={"name":"Pradeep","age":25,"skills":["Python","JS","Excel"]}
+
+print(Employee["name"])
+print(Employee["age"])
+print(Employee["skills"])
+
+print(Employee["phone"])
+
+
+print(Employee.keys())
+print(Employee.values())
+print(Employee.items())
+
+### looping through dictionary
+
+Employee={"name":"Pradeep","age":25,"skills":["Python","JS","Excel"]}
+
+for emp in Employee:
+    print(emp)
+	
+for k in Employee.keys():
+    print(k)
+	
+	
+for v in Employee.values():
+    print(v)
+	
+for k,v in Employee.items():
+    print(k,v)
+	
+### get,update,del,pop,len methods of Dictionary
+
+Employee["phone"]="+91427-2212587"
+
+print(Employee["phone"])
+print(Employee.get("Location"))
+print(Employee.get("Location","Not Found"))
+
+#del Employee["phone"]
+print(Employee)
+age = Employee.pop("age")
+print(age)
+
+print(Employee)
+
+# Empty initialisation of sequence data-types
+
+empty_list1=[]
+empty_list2=list()
+
+empty_tuple1=()
+empty_tuple2=tuple()
+
+empty_set1={} # This creates a DICTIONARY, not a set 
+empty_set2=set()
+
+print(type(empty_list1))
+print(type(empty_list2))
+print(type(empty_tuple1))
+print(type(empty_tuple1))
+print(type(empty_set1))
+print(type(empty_set2))
+
+

@@ -1,0 +1,14 @@
+"""
+#Simultaneous read and write ops on files
+with open("tf1.txt","r") as rf:
+    with open("tf1c.txt","w") as wf:
+        for line in rf:
+            wf.write(line)
+
+"""
+#Recreating image files
+
+with open("demo_image.jpg","rb") as rf:
+    with open("demo_image_copy.jpg","wb") as wf:
+        for line in rf:
+            wf.write(line)

@@ -1,0 +1,70 @@
+"""
+#Using/Creating file-objects
+f = open("tf1.txt","r")
+#f = open("tf1.txt") # same as above
+print(f.mode)
+print(f.read())
+f.close()
+
+
+
+
+
+with open("tf1.txt","r") as f:
+    print(f.mode)
+    print(f.name)
+    print(f.read())
+
+print(f.read())
+
+#Using contextual manager
+with open("tf1.txt","r") as f:
+    #f_contents=f.read()
+    #f_contents=f.readlines()
+    #print(f_contents)
+    f_contents=f.readline()
+    print(f_contents)
+    f_contents=f.readline()
+    print(f_contents)
+    f_contents=f.readline()
+    print(f_contents,end="")
+    f_contents=f.readline()
+    print(f_contents,end="")
+
+"""
+
+
+"""
+
+#Using for loop within Contextual manager 
+with open("tf1.txt","r") as f:
+    for ln in f:
+        print(ln,end="")
+
+
+with open("tf1.txt","r") as f:
+    f_contents = f.read(10)
+    print(f_contents,end="@")
+    
+    f_contents = f.read(10)
+    print(f_contents,end="@")
+
+#Using tell & seek methods
+with open("tf1.txt","r") as f:
+    f_contents = f.read(10)
+    print(f_contents,end="@\n")
+    print(f.tell())
+    f_contents = f.read(10)
+    print(f_contents,end="@\n")
+    print(f.tell())
+
+with open("tf1.txt","r") as f:
+    f_contents = f.read(10)
+    print(f_contents,end="@\n")
+    f.seek(0)
+    print(f.tell())
+    f_contents = f.read(10)
+    print(f_contents,end="@\n")
+
+"""
+    

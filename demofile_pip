@@ -1,0 +1,23 @@
+pip --version
+pip help
+pip help install
+
+pip show numpy
+pip show pywhatkit
+pip install pywhatkit
+pip install pywhatkit==3.8
+C:\Anaconda3\Lib\site-packages
+pip uninstall pywhatkit
+
+pip freeze
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
+
+Other commands to try:
+pip list --outdated
+
+
+
+c:\anaconda3\lib\os.py
